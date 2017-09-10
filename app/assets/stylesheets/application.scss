@@ -1,0 +1,43 @@
+$font-url: "https://fonts.googleapis.com/css?family=Catamaran|Open+Sans";
+// font-family: 'Catamaran', sans-serif;
+// font-family: 'Open Sans', sans-serif;
+
+
+@import 'bootstrap';
+@import 'variables';
+@import 'mixins';
+@import 'main';
+@import 'student-page';
+@import 'show';
+
+body {
+	h1, h2 {
+	font-family: 'Catamaran', sans-serif;
+	color: $blue;
+	text-align: center;
+	font-weight: bold;
+	}
+	h3, h4, h5, h6 {
+		font-family: 'Open Sans', sans-serif;
+		text-align: center;
+	}
+}
+
+.container {
+	margin: 35px auto 0;
+	overflow: scroll;
+}
+
+.btn {
+	font-family: 'Catamaran', sans-serif;
+}
+
+.main.btn.btn-primary {
+	margin: 50px 0;
+	@include positioning($position-relative...);
+}
+
+.help-block {
+	color: $red;
+}
+

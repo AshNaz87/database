@@ -1,0 +1,56 @@
+
+.main-title span {
+	border: 2px solid silver;
+	border-radius: 5px;
+	box-shadow: 5px 5px 5px silver;
+	padding: 0 1em;
+	background-color: $white;
+}
+
+.year {
+	font-weight: bold;
+	color: $red;
+}
+
+table {
+	margin: 0 auto;
+	border-collapse: collapse;
+}
+
+table, th, td {
+	border: 1px solid silver;
+}
+
+th {
+	padding: 0 1em;
+	h6 {
+		color: $tan;
+		margin: 0 auto;
+	}
+}
+
+h6 > a:first-child {
+	color: $tan;
+}
+
+tr {
+	text-align: center;
+	&:hover > td {
+	background-color: $grey;
+	}
+}
+
+td {
+	vertical-align: middle;
+}
+
+.address {
+	text-align: left;
+	white-space: pre-line;
+}
+
+
+
+
+
+

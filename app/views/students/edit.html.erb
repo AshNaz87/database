@@ -1,0 +1,21 @@
+<% provide(:title, "Edit student") %>
+<h2 class='page-title'>Student Details</h2>
+<%= simple_form_for @student do |f| %>
+	<%= f.error_notification %>
+	<%= f.input :admission_number, placeholder: 'G-100', required: true %>
+	<%= f.input :first_name, placeholder: 'First Name', required: true %>
+	<%= f.input :last_name, placeholder: 'Last Name', required: true %>
+	<%= f.input :year, collection: 1..11, prompt: 'Year' %>
+	<%= f.input :gender, collection: [:Male, :Female], prompt: 'Gender', error: 'choose gender' %>
+	<%= f.input :date_of_birth, placeholder: '10/04/1995', required: true %>
+	<%= f.input :address, as: :text, input_html: {rows: 4, cols: 1}, class: 'line-break' %>
+	<%= f.input :telephone_number, as: :text, input_html: {rows: 3, cols: 1}, placeholder: '07595959595', required: true %>
+	<%= f.input :books_taken, as: :text, input_html: {rows: 10, cols: 1} %>
+	<%= f.button :submit, 'Save', class: 'form btn btn-primary' %>
+<% end %>
+<%= link_to 'Back', :back, class: 'btn btn-secondary' %>
+
+
+
+
+

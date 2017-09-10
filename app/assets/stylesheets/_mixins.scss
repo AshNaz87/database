@@ -1,0 +1,9 @@
+@mixin positioning($position, $left, $transform) {
+	position: $position;
+	left: 50%;
+	transform: $transform;
+}
+
+$position-relative:  (position: relative, left: 50%, transform: translateX(-50%));
+
+$position-absolute: (position: absolute, left: 50%, transform: translateX(-50%));

@@ -1,0 +1,30 @@
+#student-info {
+	border: 3px solid silver;
+	background-color: $sky-blue;
+	height: 75%;
+	width: 40%;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	> h2 {
+		margin-top: 15px;
+		color: midnightblue;
+	}
+}
+
+.student-details > h6 {
+	text-align: left;
+	color: midnightblue;
+	white-space: pre-line;
+	padding-bottom: 10px;
+}
+
+.student-details > h6:last-child {
+	padding-bottom: 0;
+} 
+
+.links {
+	@include positioning($position-absolute...);
+	bottom: 4%;
+}

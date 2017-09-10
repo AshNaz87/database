@@ -1,0 +1,30 @@
+.page-title {
+	color: $tan;
+}
+
+abbr[title] {
+	text-decoration: none;
+}
+
+label {
+	text-transform: capitalize;
+	color: $blue;
+}
+
+label[for=student_gender_male], label[for=student_gender_female] {
+	color: $black;
+}
+
+.form.btn.btn-primary {
+	margin-top: 35px;
+	@include positioning($position-relative...);
+}
+
+.btn.btn-secondary {
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
+
+.check_boxes, .checkbox {
+	padding-right: 2em;
+}

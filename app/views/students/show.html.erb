@@ -1,0 +1,16 @@
+<div id="student-info">
+	<h2><%= @student.name %></h2>
+	<div class="student-details">
+		<h6>Ad No: <%= @student.admission_number %></h6>
+		<h6>Year: <%= @student.year %></h6>
+		<h6>Date of Birth: <%= @student.date_of_birth %></h6>
+		<h6>Gender: <%= @student.gender %></h6>
+		<h6>Address:<br><%= @student.address %></h6>
+		<h6>Telephone Numbers:<br><%= @student.telephone_number %></h6>
+		<h6>Books Taken:<br><%= @student.books_taken %></h6>
+	</div>
+</div>
+<div class="links">
+		<%= link_to 'Edit', edit_student_path(@student), class: 'btn btn-warning' %>
+		<%= link_to 'Delete', student_path(@student), method: :delete, data: { confirm: "Are you sure?" }, class: 'btn btn-danger' %>
+</div>
