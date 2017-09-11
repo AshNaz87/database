@@ -40,7 +40,7 @@ class StudentsController < ApplicationController
 
 	def destroy
 		@student.destroy
-		flash[:alert] = "Successfully deleted student: #{@student.name}"
+		flash[:success] = "Successfully deleted student: #{@student.name}"
 		redirect_to home_path	 
 	end
 

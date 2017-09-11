@@ -1,6 +1,8 @@
 #student-info {
 	border: 3px solid silver;
-	background-color: $sky-blue;
+	background: #649173;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #DBD5A4, #649173);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #DBD5A4, #649173); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	height: 75%;
 	width: 40%;
 	position: fixed;
@@ -8,20 +10,20 @@
 	left: 50%;
 	transform: translate(-50%, -50%);
 	> h2 {
-		margin-top: 15px;
-		color: midnightblue;
+		margin-top: 20px;
+		color: $teal;
 	}
 }
 
 .student-details > h6 {
 	text-align: left;
-	color: midnightblue;
+	color: $teal;
 	white-space: pre-line;
 	padding-bottom: 10px;
 }
 
-.student-details > h6:last-child {
-	padding-bottom: 0;
+.student-details > h6:first-child {
+	padding-top: 20px;
 } 
 
 .links {
